@@ -1,0 +1,4 @@
+Theme: Matcha-dark-sea
+Icons: Papirus-Dark-Maia
+Solarized-Dark-Complete-Desktop_1.7.1.tar.gz
+Solarized-Deluxe-Iconpack_1.7.1.tar.gz
