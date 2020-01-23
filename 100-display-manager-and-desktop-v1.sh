@@ -21,13 +21,16 @@ echo "and run the alias - mirror in the terminal"
 echo "#################################################"
 
 sudo pacman -Syyu --noconfirm
+
 #installing displaymanager or login manager
+sh AUR/install-lightdm-slick-greeter-v1.sh
+sh AUR/install-lightdm-settings-v1.sh
 sudo pacman -S --noconfirm --needed lightdm
-sudo pacman -S --noconfirm --needed lightdm-gtk-greeter lightdm-gtk-greeter-settings
+
 #installing desktop environment
 sudo pacman -S gnome --noconfirm --needed
-#sh AUR-DS/install-budgie-desktop-git-v*.sh
-sudo pacman -S budgie-desktop --noconfirm --needed
+sudo pacman -S budgie-desktop budgie-extras --noconfirm --needed 
+
 #enabling displaymanager or login manager
 sudo systemctl enable lightdm.service -f
 sudo systemctl set-default graphical.target
